@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Ubk-1v-Iws" customClass="MovieCell" customModule="MovieDbDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="170" height="201"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="9Kg-t2-vyV">
+                <rect key="frame" x="0.0" y="0.0" width="170" height="201"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eTu-7a-TUk">
+                        <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="eTu-7a-TUk" secondAttribute="height" multiplier="1:1" id="jis-it-82W"/>
+                        </constraints>
+                    </imageView>
+                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Yh9-US-ce6">
+                        <rect key="frame" x="132" y="15.5" width="22" height="20"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zFb-jC-pAv">
+                        <rect key="frame" x="10" y="175" width="37.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="eTu-7a-TUk" secondAttribute="trailing" id="BIl-ZV-COZ"/>
+                    <constraint firstItem="eTu-7a-TUk" firstAttribute="leading" secondItem="9Kg-t2-vyV" secondAttribute="leading" id="Ca4-A3-mnN"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="zFb-jC-pAv" secondAttribute="trailing" constant="10" id="Chv-xZ-QA9"/>
+                    <constraint firstAttribute="trailing" secondItem="Yh9-US-ce6" secondAttribute="trailing" constant="16" id="K5b-L2-YVx"/>
+                    <constraint firstItem="eTu-7a-TUk" firstAttribute="top" secondItem="9Kg-t2-vyV" secondAttribute="top" id="PoD-rJ-wov"/>
+                    <constraint firstItem="zFb-jC-pAv" firstAttribute="leading" secondItem="9Kg-t2-vyV" secondAttribute="leading" constant="10" id="gAi-fa-arP"/>
+                    <constraint firstItem="zFb-jC-pAv" firstAttribute="top" secondItem="eTu-7a-TUk" secondAttribute="bottom" constant="5" id="wTl-2c-P3I"/>
+                    <constraint firstItem="Yh9-US-ce6" firstAttribute="top" secondItem="9Kg-t2-vyV" secondAttribute="top" constant="16" id="yaR-at-soi"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="118" height="187"/>
+            <connections>
+                <outlet property="favoriteImageView" destination="Yh9-US-ce6" id="AuV-Xt-AF6"/>
+                <outlet property="imageView" destination="eTu-7a-TUk" id="Fqh-7R-wSs"/>
+                <outlet property="titleLabel" destination="zFb-jC-pAv" id="uMk-lF-bs7"/>
+            </connections>
+            <point key="canvasLocation" x="-46" y="50"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+    </resources>
+</document>

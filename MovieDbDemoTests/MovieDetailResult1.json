@@ -1,0 +1,98 @@
+{
+    "runtime" : 132,
+    "status" : "Released",
+    "backdrop_path" : "\/jlGmlFOcfo8n5tURmhC7YVd4Iyy.jpg",
+    "overview" : "Supervillains Harley Quinn, Bloodsport, Peacemaker and a collection of nutty cons at Belle Reve prison join the super-secret, super-shady Task Force X as they are dropped off at the remote, enemy-infused island of Corto Maltese.",
+    "title" : "The Suicide Squad",
+    "vote_count" : 2645,
+    "tagline" : "They're dying to save the world.",
+    "belongs_to_collection" : {
+        "backdrop_path" : "\/e0uUxFdhdGLcvy9eC7WlO2eLusr.jpg",
+        "id" : 531242,
+        "name" : "Suicide Squad Collection",
+        "poster_path" : "\/bdgaCpdDh0J0H7ZRpDP2NJ8zxJE.jpg"
+    },
+    "original_title" : "The Suicide Squad",
+    "original_language" : "en",
+    "poster_path" : "\/iCi4c4FvVdbaU1t8poH1gvzT6xM.jpg",
+    "production_countries" : [
+        {
+            "name" : "United States of America",
+            "iso_3166_1" : "US"
+        }
+    ],
+    "revenue" : 118084747,
+    "homepage" : "https:\/\/www.thesuicidesquad.net",
+    "video" : false,
+    "imdb_id" : "tt6334354",
+    "id" : 436969,
+    "release_date" : "2021-07-28",
+    "budget" : 180000000,
+    "popularity" : 5658.6419999999998,
+    "genres" : [
+        {
+            "id" : 28,
+            "name" : "Action"
+        },
+        {
+            "id" : 12,
+            "name" : "Adventure"
+        },
+        {
+            "id" : 14,
+            "name" : "Fantasy"
+        }
+    ],
+    "production_companies" : [
+        {
+            "logo_path" : "\/2Tc1P3Ac8M479naPp1kYT3izLS5.png",
+            "id" : 9993,
+            "origin_country" : "US",
+            "name" : "DC Entertainment"
+        },
+        {
+            "logo_path" : "\/13F3Jf7EFAcREU0xzZqJnVnyGXu.png",
+            "id" : 128064,
+            "origin_country" : "US",
+            "name" : "DC Films"
+        },
+        {
+            "logo_path" : "\/z7H707qUWigbjHnJDMfj6QITEpb.png",
+            "id" : 507,
+            "origin_country" : "US",
+            "name" : "Atlas Entertainment"
+        },
+        {
+            "logo_path" : "\/2Tc1P3Ac8M479naPp1kYT3izLS5.png",
+            "id" : 429,
+            "origin_country" : "US",
+            "name" : "DC Comics"
+        },
+        {
+            "logo_path" : null,
+            "id" : 11565,
+            "origin_country" : "US",
+            "name" : "The Safran Company"
+        },
+        {
+            "logo_path" : "\/IuAlhI9eVC9Z8UQWOIDdWRKSEJ.png",
+            "id" : 174,
+            "origin_country" : "US",
+            "name" : "Warner Bros. Pictures"
+        }
+    ],
+    "adult" : false,
+    "spoken_languages" : [
+        {
+            "english_name" : "English",
+            "name" : "English",
+            "iso_639_1" : "en"
+        },
+        {
+            "english_name" : "Spanish",
+            "name" : "Español",
+            "iso_639_1" : "es"
+        }
+    ],
+    "vote_average" : 8.0999999999999996
+}
