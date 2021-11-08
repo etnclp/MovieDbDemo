@@ -1,0 +1,121 @@
+disabled_rules: # rule identifiers to exclude from running
+
+  # Number of function parameters should be low.
+  - function_parameter_count
+
+  # Lines should not span too many characters.
+  - line_length
+
+  # Type bodies should not span too many lines.
+  - type_body_length
+
+  # Complexity of function bodies should be limited.
+  - cyclomatic_complexity
+
+  # Files should not span too many lines.
+  - file_length
+  
+  # Closure end should have the same indentation as the line that started it.
+  - closure_end_indentation
+
+  # Identifier names should only contain alphanumeric characters and start with a lowercase character or should only contain capital letters. In an exception to the above, variable names may start with a capital letter when they are declared static and immutable. Variable names should not be too long or too short.
+  - identifier_name
+
+  # Fallthroughs can only be used if the case contains at least one other statement.
+  - no_fallthrough_only # https://github.com/realm/SwiftLint/issues/2276
+  
+  # String enum values can be omitted when they are equal to the enumcase name.
+  - redundant_string_enum_value
+  
+  # SwiftLint 'disable' commands are superfluous when the disabled rule would not have triggered a violation in the disabled region.
+  - superfluous_disable_command
+
+opt_in_rules: # some rules are only opt-in
+
+  # Attributes should be on their own lines in functions and types, but on the same line as variables and imports.
+  - attributes
+  
+  # Closure expressions should have a single space inside each brace.
+  - closure_spacing
+  
+  # Prefer checking isEmpty over comparing count to zero.
+  - empty_count
+  
+  # Explicitly calling .init() should be avoided.
+  - explicit_init
+  
+  # A fatalError call should have a message.
+  - fatal_error_message
+  
+  # Prefer using .first(where:) over .filter { }.first in collections.
+  - first_where
+  
+  # Implicitly unwrapped optionals should be avoided when possible.
+  - implicitly_unwrapped_optional
+  
+  # Prefer not to use extension access modifiers
+  - no_extension_access_modifier
+  
+  # Underscores should be used as thousand separator in large decimal numbers.
+  - number_separator
+  
+  # Operators should be surrounded by a single whitespace when they are being used.
+  - operator_usage_whitespace
+  
+  # nil coalescing operator is only evaluated if the lhs is nil, coalescing operator with nil as rhs is redundant
+  - redundant_nil_coalescing
+  
+  # Cases inside a switch should always be on a newline
+  - switch_case_on_newline
+  
+  # Cases inside a switch should always be on a newline
+  - unneeded_parentheses_in_closure_argument
+
+included: # paths to include during linting. `--path` is ignored if present.
+  - Project
+
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Carthage
+  - Pods
+
+# configurable rules can be customized from this configuration file
+# binary rules can set their severity level
+
+# Closure expressions should have a single space inside each brace.
+closure_spacing: warning
+
+# Force casts should be avoided.
+force_cast: warning # implicitly
+
+# Force unwrapping should be avoided.
+force_unwrapping: warning
+
+# Implicitly unwrapped optionals should be avoided when possible.
+implicitly_unwrapped_optional: warning
+
+# Functions and methods parameters should be either on the same line, or one per line.
+multiline_parameters: warning
+
+# Opening braces should be preceded by a single space and on the same line as the declaration.
+opening_brace: warning
+
+#Force tries should be avoided.
+force_try:
+  severity: warning # explicitly
+
+line_length:
+  warning: 160
+  ignores_comments: true
+  ignores_function_declarations: true
+
+file_length:
+  ignore_comment_only_lines: true
+
+# Functions bodies should not span too many lines.
+function_body_length:
+  warning: 100
+
+trailing_comma:
+  mandatory_comma: true
+
+reporter: "xcode" # reporter type (xcode, json, csv, checkstyle, junit, html, emoji)
